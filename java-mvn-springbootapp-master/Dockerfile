@@ -11,4 +11,4 @@ COPY target/*.war app.war
 EXPOSE 8080
 
 # Start the application
-ENTRYPOINT ["java", "-war", "app.war"]
+ENTRYPOINT ["java", "-jar", "app.war"]
