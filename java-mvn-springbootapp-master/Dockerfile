@@ -5,10 +5,10 @@ FROM eclipse-temurin:17-jre
 WORKDIR /app
 
 # Copy the already built artifact from Jenkins (target folder)
-COPY target/*.jar app.jar
+COPY target/*.war app.war
 
 # Expose port (example: 8080 for Spring Boot)
 EXPOSE 8080
 
 # Start the application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-war", "app.war"]
