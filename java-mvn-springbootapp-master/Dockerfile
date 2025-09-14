@@ -7,8 +7,9 @@ WORKDIR /app
 # Copy the already built artifact from Jenkins (target folder)
 COPY target/*.war app.war
 
-# Expose port (example: 8080 for Spring Boot)
-EXPOSE 8080
+# Expose port (check src/main/resources/application.properties for the correct port)
+EXPOSE 8289 
 
 # Start the application
 ENTRYPOINT ["java", "-jar", "app.war"]
+
