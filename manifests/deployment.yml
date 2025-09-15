@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: trishala-app
-          image: 471448381908.dkr.ecr.ap-south-1.amazonaws.com/dev-app-repo
+          image: 471448381908.dkr.ecr.ap-south-1.amazonaws.com/dev-app-repo:4
           ports:
             - containerPort: 8080
           resources:
