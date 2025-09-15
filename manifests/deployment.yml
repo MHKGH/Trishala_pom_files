@@ -19,7 +19,7 @@ spec:
         - name: trishala-app
           image: 471448381908.dkr.ecr.ap-south-1.amazonaws.com/dev-app-repo:4
           ports:
-            - containerPort: 8080
+            - containerPort: 8289
           resources:
             requests:
               memory: "256Mi"
