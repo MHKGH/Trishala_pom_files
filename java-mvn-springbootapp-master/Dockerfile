@@ -9,7 +9,8 @@ COPY target/*.war app.war
 
 # Expose port (check src/main/resources/application.properties for the correct port)
 EXPOSE 8289 
+# Expose port (check src/main/resources/application.properties for the correct port)
+EXPOSE 8289 
 
 # Start the application
 ENTRYPOINT ["java", "-jar", "app.war"]
-
