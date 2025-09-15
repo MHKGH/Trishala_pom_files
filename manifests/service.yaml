@@ -8,6 +8,6 @@ spec:
     app: trishala-app
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 8289
-  type: ClusterIP
+      port: 80        # external port on ELB
+      targetPort: 8289 # pod port
+  type: LoadBalancer
